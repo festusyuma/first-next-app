@@ -1,5 +1,5 @@
 import styles from '../styles/Layout.module.css'
-import Nav from "./Nav";
+import {Nav, Header} from "./index";
 
 const Layout = ({ children }) => {
     return (
@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
             <Nav />
             <div className={styles.container}>
                 <main className={styles.main}>
-                    <p>Next app</p>
+                    <Header />
                     {children}
                 </main>
             </div>
